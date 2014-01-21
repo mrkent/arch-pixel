@@ -4,10 +4,14 @@ https://github.com/vitamins/archinstaller/
 https://gist.github.com/thirteen37/5559107
 
 ## Prerequisites
-- You are booted into an arch linux environment
-- The internet connection has been set up
-- The configuration found in ari.conf is valid
-- The script is run as 'root' user
+1. You are booted into an arch linux environment
+..* Use the 2013.04.01 Arch ISO (this works for sure, while 2013.10.01 ISO definitely does not.)
+2. The internet connection has been set up
+..* iw dev
+..* ip link set wlp1s0 up
+..* wifi-menu wlp1s0
+3. The configuration found in ari.conf is valid
+4. The script is run as 'root' user
 
 ### packages
 The required utilities can be installed with the following packages:

@@ -1,19 +1,5 @@
-##############################################################
-# title		: ari.conf.example
-# description	: Example configuration for archinstaller
-# authors	: Dennis Anfossi & teateawhy
-# contact	: https://github.com/vitamins/archinstaller
-# date		: 19.01.2014
-# version	: 0.6.4.2
-# license	: GPLv2
-##############################################################
-
-# See README for additional options, and read the script for
-# details about how options are processed.
-# EXAMPLE CONFIGURATION ONLY
-
 uefi='no'
-bootloader='syslinux'
+bootloader='grub'
 dest_disk='/dev/sda'
 partition_table='gpt'
 swap='no'
@@ -23,18 +9,18 @@ hash_alg='sha512'
 key_size='512'
 root_size='20G'
 fstype='ext4'
-mirror='http://mirror.de.leaseweb.net/archlinux/'
-locale='de_DE.UTF-8 UTF-8'
-keymap='de-latin1'
+mirror='http://mirrors.kernel.org/archlinux/'
+locale='en_US.UTF-8 UTF-8'
+keymap='us'
 font='Lat2-Terminus16'
-timezone='Europe/Berlin'
+timezone='America/New_York'
 hardware_clock='utc'
-hostname='ted'
-network='dhcpcd'
+hostname='pixel'
+network='no'
 set_password='no'
-add_user='yes'
-username='archey'
-packages=(vim zsh)
+add_user='no'
+username=''
+packages=(zsh vim base-devel emacs networkmanager network-manager-applet xf86-video-intel lib32-intel-dri xf86-input-synaptics gamin)
 xorg='yes'
 desktop_environment='xfce4'
-display_manager='no'
+display_manager='lxdm'

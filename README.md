@@ -24,11 +24,8 @@ The required utilities can be installed with the following packages:
 All utilities are included on archiso, which can be downloaded at https://www.archlinux.org/download/ .
 
 ## Download
-### With git
-- clone the repository: `git clone git://github.com/vitamins/archinstaller`
-
 ### Without git
-- download the tarball: `curl -L https://github.com/vitamins/archinstaller/tarball/master | tar xz`
+- download the tarball: `curl -L https://github.com/mrkent/arch-pixel/tarball/master | tar xz`
 
 ## Usage
 - Edit the configuration file ari.conf: `nano ari.conf`
@@ -188,3 +185,8 @@ Passwords are not stored in the script or configuration file. Instead you are be
 
 ### Encryption
 If you want to encrypt the home partition with LUKS and dm-crypt set "encrypt_home" to 'yes'. Details like cipher, hash algorithm and key size can be configured in ari.conf. The respective variables are "cipher","hash_alg" and "key_size". Run `cryptsetup benchmark` for a list of available options and their performance. The defaults are set to cipher='aes-xts-plain64', hash_alg='sha1' and key_size='256'.
+
+
+### AUR packages
+https://aur.archlinux.org/packages/xf86-input-synaptics-mtpatch/
+https://aur.archlinux.org/packages/touchegg/

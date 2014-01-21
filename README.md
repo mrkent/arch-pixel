@@ -1,5 +1,7 @@
-# archinstaller
-Automated installation script for arch linux written in bash.
+# arch-pixel
+Automated installation script for arch linux for Chromebook Pixel
+https://github.com/vitamins/archinstaller/
+https://gist.github.com/thirteen37/5559107
 
 ## Prerequisites
 - You are booted into an arch linux environment

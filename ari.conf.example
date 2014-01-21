@@ -1,7 +1,7 @@
 uefi='no'
 bootloader='grub'
 dest_disk='/dev/sda'
-partition_table='gpt'
+partition_table='mbr'
 swap='no'
 encrypt_home='yes'
 cipher='aes-xts-plain64'
@@ -24,3 +24,4 @@ packages=(zsh vim base-devel emacs networkmanager network-manager-applet xf86-vi
 xorg='yes'
 desktop_environment='xfce4'
 display_manager='lxdm'
+k_modules=( 'dm_mod' atmel-mxt-ts)

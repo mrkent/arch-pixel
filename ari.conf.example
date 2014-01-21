@@ -23,4 +23,4 @@ packages=(zsh vim base-devel emacs networkmanager network-manager-applet xf86-vi
 xorg='yes'
 desktop_environment='xfce4'
 display_manager='lxdm'
-k_modules=( 'dm_mod' atmel-mxt-ts)
+k_modules=(atmel-mxt-ts)

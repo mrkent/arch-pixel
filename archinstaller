@@ -775,7 +775,8 @@ install_bootloader
 if [[ "$manual_part" = 'yes' ]]; then
 	message 'Please unmount the targeted filesystems before rebooting.'
 else
-	umount -R /mnt
+	umount  /mnt/home
+	umount /mnt
 	## close encrypted volume
 	[[ "$encrypt_home" = 'yes' ]] && cryptsetup close home
 fi

@@ -27,7 +27,7 @@ Automated installation script for arch linux for Chromebook Pixel
 ### Preping Arch and this script
 
 ##### Prerequisites 
-1. Download the 2013.04.01 Arch ISO (link) (https://www.archlinux.org/releng/releases/2013.04.01/)
+1. Download the 2013.04.01 Arch ISO (https://mega.co.nz/#!htx1QLJK!07ap012cemdaaGOGeAT4geiLP5mXjkbhzYTERpVuHf8) (https://www.archlinux.org/releng/releases/2013.04.01/)
 2. Install USB: `# dd bs=4M if=/path/to/archlinux.iso of=/dev/sdx && sync`
 3. Download this script: `curl -L https://github.com/mrkent/arch-pixel/tarball/master | tar xz`
 4. Modify ari.conf as needed. Provided ari.conf.example works fine. It's best not to change anything that's unnecessary like adduser or passwd because it may cause script to abort.
